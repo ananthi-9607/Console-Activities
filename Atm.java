@@ -7,11 +7,16 @@ public class Atm{
         if(balance<=0){
             System.out.println("Insufficient Balance");
         }
-        if(balance>=withdraw){
+        if(withdraw>balance){
+            System.out.println("Insufficient Balance");
+        }
+        else{
+       
             double newBalance=balance-withdraw;
             System.out.println("Withdrawal successful.");
             System.out.println("New balance: " + newBalance);
         }
     }
 }
+
 
